@@ -1,0 +1,64 @@
+/* General Body Styles */
+body {
+  font-family: 'Creepster', cursive;
+  background-color: #000; /* Black background */
+  color: #ffa500; /* Orange text */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://example.com/spooky-background.jpg'); /* Replace with a URL of your choice */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+header {
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 5px solid #ff4500; /* Dark orange border */
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 3px 3px 10px #ff4500;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* Contest Details */
+section {
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
+  border-radius: 10px;
+  border: 2px solid #ffa500; /* Orange border */
+}
+
+a {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #000;
+  background-color: #ff4500; /* Orange background */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: #ffa500;
+  color: #fff; /* White text on hover */
+  text-shadow: 2px 2px 5px #ff4500;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffa500;
+  font-size: 1em;
+}
