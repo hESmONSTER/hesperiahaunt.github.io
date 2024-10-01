@@ -6,7 +6,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-image: url('https://example.com/spooky-background.jpg'); /* Replace with a URL of your choice */
+  background-image: url('https://example.com/spooky-background.jpg'); /* Replace with a scary image */
   background-size: cover;
   background-position: center;
 }
@@ -14,24 +14,40 @@ body {
 /* Header */
 header {
   padding: 50px 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 5px solid #ff4500; /* Dark orange border */
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 5px solid #32cd32; /* Neon green border */
 }
 
 h1 {
   font-size: 3em;
-  text-shadow: 3px 3px 10px #ff4500;
+  color: #32cd32; /* Neon green */
+  text-shadow: 3px 3px 10px #ff4500; /* Orange shadow */
 }
 
 p {
   font-size: 1.5em;
+  color: #ffa500;
 }
 
-/* Contest Details */
-section {
+/* Contest Details Section */
+.contest-info {
   margin: 50px 20px;
   padding: 20px;
-  background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
+  background-color: rgba(34, 34, 34, 0.9);
+  border-radius: 10px;
+  border: 2px solid #32cd32; /* Neon green border */
+}
+
+.contest-info p {
+  font-size: 1.2em;
+  color: #ffa500;
+}
+
+/* Registration Section */
+.registration {
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.9);
   border-radius: 10px;
   border: 2px solid #ffa500; /* Orange border */
 }
@@ -49,9 +65,33 @@ a {
 }
 
 a:hover {
-  background-color: #ffa500;
-  color: #fff; /* White text on hover */
+  background-color: #32cd32;
+  color: #fff;
   text-shadow: 2px 2px 5px #ff4500;
+}
+
+/* Map Section */
+.map-section {
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.9);
+  border-radius: 10px;
+  border: 2px solid #32cd32;
+}
+
+.map-placeholder {
+  height: 300px;
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #32cd32;
+}
+
+.map-placeholder p {
+  font-size: 1.5em;
 }
 
 /* Footer */
