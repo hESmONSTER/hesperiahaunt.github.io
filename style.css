@@ -94,6 +94,31 @@ a:hover {
   font-size: 1.5em;
 }
 
+/* Image Gallery Section */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 15px;
+  margin: 50px 20px;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.9);
+  border-radius: 10px;
+  border: 2px solid #32cd32; /* Neon green border */
+}
+
+.image-gallery img {
+  width: 100%; /* Makes images responsive within the grid */
+  height: auto;
+  border: 3px solid #32cd32; /* Neon green border for images */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff4500; /* Orange glow effect around images */
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
 /* Footer */
 footer {
   margin-top: 30px;
