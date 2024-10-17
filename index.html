@@ -8,6 +8,18 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-VRMW7NGS91');
+
+    let lastVoteTime = 0;
+
+    function validateVote() {
+      const currentTime = Date.now();
+      if (currentTime - lastVoteTime < 30000) {
+        alert("You can only vote once every 30 seconds. Please wait before voting again.");
+        return false;
+      }
+      lastVoteTime = currentTime;
+      return true;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,29 +96,42 @@
     <img src="images/16461.9.jpeg" alt="Image 9 of decorations at 16461 Sycamore St" />
   </section>
 
+  <!-- Image Gallery Section for 13531 Dellwood Rd -->
+  <section class="image-gallery">
+    <h2>13531 Dellwood Rd, Victorville</h2>
+    <p>🎃 Welcome to the Children's Cemetery! This home is a spooky graveyard, featuring playful ghosts, and friendly skeletons, creating a fun atmosphere for the little ones. 🌙👻</p>
+    <img src="images/13531.1.jpg" alt="Image 1 of decorations at 13531 Dellwood Rd" />
+    <img src="images/13531.2.jpg" alt="Image 2 of decorations at 13531 Dellwood Rd" />
+    <img src="images/13531.3.jpg" alt="Image 3 of decorations at 13531 Dellwood Rd" />
+    <img src="images/13531.4.jpg" alt="Image 4 of decorations at 13531 Dellwood Rd" />
+    <img src="images/13531.5.jpg" alt="Image 5 of decorations at 13531 Dellwood Rd" />
+    <img src="images/13531.6.jpg" alt="Image 6 of decorations at 13531 Dellwood Rd" />
+  </section>
+
   <!-- Voting Section -->
   <section class="voting">
     <h2>Cast Your Vote</h2>
-    <form action="https://formspree.io/f/mdkooyly" method="POST">
+    <form action="https://formspree.io/f/mdkooyly" method="POST" onsubmit="return validateVote();">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
-      
+      <label for="address">Your Address:</label>
+      <input type="text" id="address" name="address" required>
       <label for="vote">Vote for Your Favorite Home:</label>
       <select id="vote" name="vote" required>
+        <option value="">Select a home</option>
         <option value="10342 Kern Ave">10342 Kern Ave</option>
         <option value="16461 Sycamore St">16461 Sycamore St</option>
+        <option value="13531 Dellwood Rd">13531 Dellwood Rd</option>
       </select>
-
       <button type="submit">Submit Vote</button>
     </form>
   </section>
 
-  <!-- Footer Section -->
   <footer>
-    <p>Our mission is to bring fun and excitement to the community while ensuring everyone participates safely. Thank you for joining us in the first annual Hesperia Haunt contest!</p>
+    <p>&copy; 2024 Hesperia Haunt. All Rights Reserved.</p>
+    <p>Thank you for participating safely!</p>
   </footer>
 </body>
 </html>
-
 
 
