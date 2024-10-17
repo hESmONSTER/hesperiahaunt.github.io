@@ -86,16 +86,18 @@
 
   <!-- Voting Section -->
   <section class="voting">
-    <h2>Vote for Your Favorite Haunted House!</h2>
-    <p>Help us choose the spookiest home by casting your vote below:</p>
-    <form action="submit_vote.php" method="POST">
-      <label for="home">Select a home to vote for:</label>
-      <select id="home" name="home" required>
+    <h2>Cast Your Vote</h2>
+    <form action="https://formspree.io/f/mdkooyly" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="vote">Vote for Your Favorite Home:</label>
+      <select id="vote" name="vote" required>
         <option value="10342 Kern Ave">10342 Kern Ave</option>
         <option value="16461 Sycamore St">16461 Sycamore St</option>
       </select>
-      <br>
-      <input type="submit" value="Vote">
+
+      <button type="submit">Submit Vote</button>
     </form>
   </section>
 
@@ -105,5 +107,6 @@
   </footer>
 </body>
 </html>
+
 
 
