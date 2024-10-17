@@ -84,6 +84,21 @@
     <img src="images/16461.9.jpeg" alt="Image 9 of decorations at 16461 Sycamore St" />
   </section>
 
+  <!-- Voting Section -->
+  <section class="voting">
+    <h2>Vote for Your Favorite Haunted House!</h2>
+    <p>Help us choose the spookiest home by casting your vote below:</p>
+    <form action="submit_vote.php" method="POST">
+      <label for="home">Select a home to vote for:</label>
+      <select id="home" name="home" required>
+        <option value="10342 Kern Ave">10342 Kern Ave</option>
+        <option value="16461 Sycamore St">16461 Sycamore St</option>
+      </select>
+      <br>
+      <input type="submit" value="Vote">
+    </form>
+  </section>
+
   <!-- Footer Section -->
   <footer>
     <p>Our mission is to bring fun and excitement to the community while ensuring everyone participates safely. Thank you for joining us in the first annual Hesperia Haunt contest!</p>
